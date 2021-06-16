@@ -3,6 +3,7 @@
 <head>
 
   <script src='./script.js'></script>
+  <link rel="stylesheet" href="./style.css">
 
   <title>Stream Participation OAuth Setup</title>
 
@@ -22,6 +23,24 @@
   <p>You can also run functions for more powerful events!</p>
   <a href="https://github.com/lougehrig10/StreamParticipationExampleFunctions">Click here for example functions!</a>
 
+  <br><br><br>
+  <p>Finally, information about the transaction is stored in NBT for later use. The following is how it is stored:</p>
+  <table>
+    <tr>
+      <th>NBT Path</th>
+      <th>Data</th>
+    </tr>
+    <td>streamparticipation userDisplayName</td>
+    <td>User who called event</td>
+    <tr>
+      <td>streamparticipation rewardCost</td>
+      <td>Amount of bits used</td>
+    </tr>
+    <tr>
+      <td>streamparticipation rewardTitle</td>
+      <td>Name of event</td>
+    </tr>
+  </table>
 </body>
 
 </html>
