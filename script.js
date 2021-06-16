@@ -1,3 +1,3 @@
 window.addEventListener('DOMContentLoaded',()=>{
-  document.getElementById('command').innerHTML = "/configSP " + document.location.hash.access_token;
+  document.getElementById('command').innerHTML = "/configSP " + document.location.hash.match("(?:access_token=)[^&]*")[0];
 });
